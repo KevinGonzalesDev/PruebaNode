@@ -1,9 +1,10 @@
 import sql from "mssql";
+import config from "../config";
 const dbSettings = {
-  user: "sa",
-  password: "Password123!",
-  server: "localhost",
-  database: "BD_TAWA",
+  user: config.dbUser,
+  password: config.dbPassword,
+  server: config.dbServer,
+  database: config.dbDatabase,
   options: {
     encrypt: true,
     trustServerCertificate: true,
